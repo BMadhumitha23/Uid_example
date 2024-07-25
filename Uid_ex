@@ -1,0 +1,26 @@
+
+<html>
+    <head></head>
+    <body>
+        <p> class example</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            class Student{
+                constructor(name,rollno,m1,m2){
+                    this.name=name;
+                    this.rollno=rollno;
+                    this.m1=m1;
+                    this.m2=m2;
+                }
+                 total=()=>this.m1+this.m2;
+            }
+            
+            const s1=new Student('madhu',59,60,30);
+            const s2=new Student('priya',50,90,30);
+            document.getElementById('demo').innerHTML=s1.name+" "+s1.rollno +" total= "+s1.total();
+            document.getElementById('demo1').innerHTML=s2.name+" "+s2.rollno +" total= "+s2.total();
+           
+        </script>
+    </body>
+</html>
